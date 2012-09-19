@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'text!${1:pathTo}/templates/${2:templateFile}.html'
+], function(\$, _, Backbone, $2) {
+
+    //define ${3:${TM_FILENAME/(.*)\.[^.]+$/$1/g}} view
+    var $3 = Backbone.View.extend({
+
+        //the properties of this.el
+        tagName: '${4:div}',
+		className: '${5:someClass}',
+
+		template: _.template($2),
+
+		initialize: function(options) {
+			//
+		},
+
+		events: {
+			//"event selector": "callback",
+		},
+
+		render: function() {
+			var tmpl = this.template(/*this.options.model.toJSON()*/);
+			this.\$el.html(tmpl);
+
+			this.delegateEvents();
+
+			//returning this enables chaining
+			return this;
+		}
+
+    });
+
+    //return an un-instantiated view
+    return $3;
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bb-view</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
