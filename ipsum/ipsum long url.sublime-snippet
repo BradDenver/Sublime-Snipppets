@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+http://www.superrugby.com.au/Brumbies/Waratahs/Reds/Force/Rebels/Blues/Chiefs/Crusaders/Highlanders/Hurricanes/Bulls/Cheetahs/Kings/Lions/Sharks/Stormers/rugby.html
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ipsum-url-long</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

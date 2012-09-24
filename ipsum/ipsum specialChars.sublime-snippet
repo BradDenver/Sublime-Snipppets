@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Super'cali"fragi,listic@expiali.docious
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ipsum-special-chars</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
